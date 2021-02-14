@@ -13,4 +13,4 @@ Evento ministrado pelo professor: [Násser Yousef Ali](https://www.youtube.com/c
 - Biblioteca GSAP: https://greensock.com/docs/v2/
 
 ### Página
-![https://github.com/MicaelRiboura/spiderman-miles-morales/blob/main/screenshots/screeshot-spiderman.png]
+![Spiderman Miles Morales page](https://github.com/MicaelRiboura/spiderman-miles-morales/blob/main/screenshots/screeshot-spiderman.png)
