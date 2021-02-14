@@ -15,7 +15,8 @@ body {
 
 @media screen and (max-width: 960px) {
   body {
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
   }
 }
 
@@ -191,6 +192,13 @@ p {
   width: 100%;
 }
 
+@media screen and (max-width: 960px) {
+  .btn-secondary {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+}
+
 .bg-video {
   position: absolute;
   top: 0;
@@ -242,7 +250,7 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: linear-gradient(225deg, #EA1D22 0%, #B31317 100%);
+  background: linear-gradient(225deg, #14181F 0%, #0A0C10 100%);
   overflow: hidden;
 }
 
@@ -290,8 +298,31 @@ header {
 
 @media screen and (max-width: 960px) {
   .nav-list {
-    display: none;
+    background-color: #272A31;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    z-index: 2;
+    padding: 0 30px;
+    padding-top: 10vh;
+    margin-right: -100vh;
+    -webkit-transition: 0.7s ease;
+    transition: 0.7s ease;
   }
+  .nav-list li {
+    margin-left: 0;
+  }
+}
+
+.showMenu {
+  margin-right: 0;
+  -webkit-transition: 0.7s ease;
+  transition: 0.7s ease;
 }
 
 .logo {
@@ -333,18 +364,39 @@ header {
   height: 40px;
 }
 
+@media screen and (max-width: 960px) {
+  .nav-link::after {
+    opacity: 0;
+  }
+  .nav-link:hover {
+    color: #F4F7FB;
+  }
+  .nav-link:hover::after {
+    opacity: 0;
+  }
+}
+
 .bx {
   display: none;
-  width: 48px;
+  width: 38px;
   height: 48px;
-  background-color: #EDF1F7;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 960px) {
   .bx {
     display: block;
+    z-index: 3;
   }
+}
+
+.bx div {
+  width: 100%;
+  border-radius: 12px;
+  height: 3px;
+  background-color: #EDF1F7;
+  margin-bottom: 4px;
 }
 
 .nav-social {
@@ -683,6 +735,7 @@ header {
 
 .logo-spiderman {
   fill: transparent;
+  stroke: #EA1D22;
   -webkit-animation: logo-spiderman 7s ease infinite alternate;
           animation: logo-spiderman 7s ease infinite alternate;
 }
@@ -700,7 +753,7 @@ header {
   }
   60%, 100% {
     stroke-width: 0.3;
-    fill: #E5E9EF;
+    fill: #EA1D22;
   }
 }
 
@@ -717,7 +770,7 @@ header {
   }
   60%, 100% {
     stroke-width: 0.3;
-    fill: #E5E9EF;
+    fill: #EA1D22;
   }
 }
 /*# sourceMappingURL=style.css.map */

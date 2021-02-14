@@ -34,3 +34,11 @@ document.addEventListener('DOMContentLoaded', () => {
     {y: -50, opacity: 0},
     {y: 0, opacity: 1, ease: Expo.easeInOut}, '-=0.5')
 });
+
+
+const bx = document.querySelector('.bx');
+const navList = document.querySelector('.nav-list');
+
+bx.addEventListener('click', () => {
+    navList.classList.toggle('showMenu');
+});

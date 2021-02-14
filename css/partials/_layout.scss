@@ -120,6 +120,11 @@
             width: 100%;
         }
     }
+
+    @include responsive(){
+        margin-top: 20px;
+        margin-left: 0;
+    }
 }
 
 .bg-video{
@@ -164,6 +169,6 @@
     justify-content: center;
     align-items: center;
 
-    background: linear-gradient(225deg, $red 0%, $red-dark 100%);
+    background: linear-gradient(225deg, $blue 0%, $blue-dark 100%);
     overflow: hidden;
 }

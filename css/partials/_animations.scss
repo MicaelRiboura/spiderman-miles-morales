@@ -1,5 +1,6 @@
 .logo-spiderman{
     fill: transparent;
+    stroke: $red;
     animation: logo-spiderman 7s ease infinite alternate;
 }
 
@@ -18,6 +19,6 @@
 
     60%,100%{
         stroke-width: 0.3;
-        fill: $white-dark;
+        fill: $red;
     }
 }

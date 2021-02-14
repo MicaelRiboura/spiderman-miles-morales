@@ -19,7 +19,8 @@ body{
 
     overflow: hidden;
     @include responsive(){
-        overflow: auto;
+        overflow-y: auto;
+        overflow-x: hidden;
     }
 }
 
