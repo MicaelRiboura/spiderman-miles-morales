@@ -1,0 +1,53 @@
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Mukta', sans-serif;
+}
+@import 'partials/colors';
+
+@mixin responsive(){
+    @media screen and (max-width: 960px){
+        @content;
+    }
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: $blue-dark;
+
+    overflow: hidden;
+    @include responsive(){
+        overflow: auto;
+    }
+}
+
+img, svg {
+    display: block;
+}
+
+.img-full{
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: $white;
+}
+
+.border {
+    border: 1px solid red;
+}
+
+p{
+    font-size: 16px;
+    color: $gray-3;
+    letter-spacing: 1px;
+    line-height: 140%;
+}
+
+@import 'partials/layout';
+@import 'partials/menu';
+@import 'partials/spacing';
+@import 'partials/animations';
