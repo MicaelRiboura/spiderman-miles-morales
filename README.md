@@ -1,6 +1,6 @@
 # Spiderman - Miles Morales - Frontweek
 
-## Página do jogo do Spiderman - Miles Morales
+![Spiderman Miles Morales page](https://github.com/MicaelRiboura/spiderman-miles-morales/blob/main/screenshots/screeshot-spiderman.png)
 Evento ministrado pelo professor: [Násser Yousef Ali](https://www.youtube.com/channel/UCiHkIXtKHLHbyBs352UI6QQ)
 
 ## Personalizações adicionais:
@@ -12,5 +12,3 @@ Evento ministrado pelo professor: [Násser Yousef Ali](https://www.youtube.com/c
 - Biblioteca Tilt.js: https://gijsroge.github.io/tilt.js/​
 - Biblioteca GSAP: https://greensock.com/docs/v2/
 
-### Página
-![Spiderman Miles Morales page](https://github.com/MicaelRiboura/spiderman-miles-morales/blob/main/screenshots/screeshot-spiderman.png)
